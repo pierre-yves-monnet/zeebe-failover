@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.camunda.failover</groupId>
+    <artifactId>zeebe-failover</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <zeebe.version>8.0.3</zeebe.version>
+        <junit.jupiter.version>5.8.2</junit.jupiter.version>
+        <opensagres.version>2.0.3</opensagres.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>io.camunda</groupId>
+            <artifactId>spring-zeebe-starter</artifactId>
+            <version>${zeebe.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.camunda</groupId>
+            <artifactId>zeebe-client-java</artifactId>
+            <version>${zeebe.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.camunda.community</groupId>
+            <artifactId>zeebe-cherry-framework</artifactId>
+            <version>1.0.1-SNAPSHOT</version>
+        </dependency>
+
+
+    </dependencies>
+</project>
